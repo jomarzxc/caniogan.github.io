@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caniogan</title>
+    <link rel="icon" href="images/caniogan.jpg">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"> <img src="images/caniogan.jpg" alt="logo"> </a> 
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <div class="dropdown-content">
+                        <a href="blotter-posting.html">Blotter</a>
+                        <a href="request-posting.html">Request</a>
+                        <a href="permit-posting.html">Permit</a>
+                        <a href="health-posting.html">Health Service</a>
+                        <a href="disaster-posting.html">Fire Protection</a>
+                        <a href="#">Transfer of Residency</a>
+                        <a href="birth.html">Birth Fact</a>
+                        <a href="solo-posting.html">Solo Parent ID</a>
+                        <a href="noincome-posting.html">No Income Declaration</a>
+                        <a href="firsttime-posting.html">First-Time Job Seeker's Assistance</a>
+                        <a href="environmental-posting.html">Environmental Support</a>
+                    </div>
+                </li>
+                <li><a href="news.php">News</a></li>
+                <li><a href="calamity.html">Calamity</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="user">
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome! Barangay Caniogan</h1>
+            <a href="aboutus.html" class="btn">About Us</a>
+        </div>
+        <img>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>
